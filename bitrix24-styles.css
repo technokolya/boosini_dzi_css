@@ -1,0 +1,184 @@
+/* Вставьте это в поле "Пользовательский CSS" в Bitrix24 */
+/* Галочка "Добавить/редактировать для всего сайта" — ВКЛЮЧИТЕ! */
+
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Manrope:wght@200..800&display=swap');
+
+/* ========== 1. РАЗМЕР ШРИФТА (18px база) ========== */
+main, .landing-block {
+  font-size: 18px !important;
+}
+
+main p, .landing-block-node-text, .landing-block-node-text-block-text,
+.landing-block-node-card-text, .landing-block-node-icon-text,
+.landing-semantic-text-medium {
+  font-size: 1em !important;
+}
+
+h1.landing-block-node-title { font-size: 1.9rem !important; }
+h2.landing-block-node-title { font-size: 1.45rem !important; }
+h3.landing-block-node-title { font-size: 1.2rem !important; }
+h4.landing-block-node-title { font-size: 1.05rem !important; }
+h5.landing-block-node-title, h6.landing-block-node-title { font-size: 0.95rem !important; }
+.landing-block-node-card-title, .landing-block-node-text-block-title { font-size: 1.05rem !important; }
+.landing-block-node-subtitle, .landing-block-node-upper-title { font-size: 0.85rem !important; }
+
+/* ========== 2. ШАПКА (МЕНЮ) — ссылки белые, при наведении золотистые ========== */
+.navbar .nav-link,
+.navbar .navbar-nav a:not(.btn):not([class*="g-btn"]),
+.landing-block-node-menu-link,
+.navbar a[href*="#block"] {
+  color: #FAFAFA !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .navbar-nav a:not(.btn):hover,
+.landing-block-node-menu-link:hover,
+.navbar a[href*="#block"]:hover {
+  color: #fff3d1 !important;
+}
+
+/* Кнопка Контакты в меню — золотой градиент (уже в CTA-правилах) */
+
+/* ========== 3. ФОН БЛОКОВ #151515 (кроме блоков с картинкой) ========== */
+.g-bg-black-opacity-0_9--after::after,
+.g-bg-black-opacity-0_9,
+[class*="g-bg-black"],
+.g-theme-business-bg-blue-dark-v2,
+[class*="g-theme-business-bg"],
+.landing-block .page-background:not([style*="background-image"])::before,
+.landing-block .page-background-overlay:not([style*="background-image"])::before {
+  background: #151515 !important;
+}
+
+/* Блоки с фоновой картинкой (hero, и т.д.) — не заливать цветом */
+.page-background[style*="background-image"]::before,
+.page-background-overlay[style*="background-image"]::before,
+.landing-block[style*="background-image"] .page-background::before,
+.landing-block[style*="background-image"] .page-background-overlay::before {
+  background: transparent !important;
+}
+
+/* ========== 4. ЗАГОЛОВКИ — градиентный текст ========== */
+.landing-block-node-card-title,
+.landing-block-node-icon-title,
+.landing-semantic-title-image-big,
+.landing-semantic-title-medium-bg-before,
+h1.landing-block-node-title,
+h2.landing-block-node-title,
+h3.landing-block-node-title,
+h4.landing-block-node-title,
+h5.landing-block-node-title,
+h6.landing-block-node-title,
+.landing-block-node-text-block-title,
+.u-heading-v2__title,
+.g-font-el-messiri,
+.g-font-old-standard-tt {
+  background: linear-gradient(121deg, #fbe79a 0%, #fff3d1 56.49%, #b89336 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-family: 'El Messiri', sans-serif !important;
+}
+
+/* ========== 5. КНОПКИ ========== */
+a.landing-block-node-card-button,
+a.btn.g-btn-primary,
+.landing-block-node-card-button.btn,
+main .landing-block-node-card-button {
+  background: linear-gradient(135deg, #fbe79a 0%, #fff3d1 32.5%, #b89336 100%) !important;
+  color: #4D3A0C !important;
+  border: none !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+a.landing-block-node-card-button:hover,
+a.btn.g-btn-primary:hover {
+  background: linear-gradient(135deg, #fff3d1 0%, #fbe79a 50%, #b89336 100%) !important;
+  color: #4D3A0C !important;
+}
+
+main a[href*="#b8057"]:not(.navbar-brand):not([class*="menu"]),
+main a[href*="#block"]:not(.navbar-brand):not([class*="menu"]),
+main a.btn:not(.navbar-brand):not([class*="menu"]),
+main a.g-btn:not(.navbar-brand):not([class*="menu"]) {
+  background: linear-gradient(135deg, #fbe79a 0%, #fff3d1 32.5%, #b89336 100%) !important;
+  color: #4D3A0C !important;
+  padding: 10px 24px !important;
+  border-radius: 5px !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-family: 'Manrope', sans-serif !important;
+}
+
+main a[href*="#b8057"]:hover,
+main a[href*="#block"]:hover,
+main a.btn:hover,
+main a.g-btn:hover {
+  background: linear-gradient(135deg, #fff3d1 0%, #fbe79a 50%, #b89336 100%) !important;
+  color: #4D3A0C !important;
+}
+
+/* ========== 6. ТЕКСТ ========== */
+.landing-block-node-text,
+.landing-block-node-text-block-text,
+.landing-block-node-card-text,
+.landing-block-node-icon-text,
+.landing-semantic-text-medium,
+main p {
+  color: #FAFAFA !important;
+  font-family: 'Manrope', sans-serif !important;
+}
+
+.g-color-white:not(.landing-block-node-card-title):not(h1):not(h2):not(h3):not(h4):not(h5):not(h6),
+.g-color-gray-dark-v1,
+.g-color-white-opacity-0_7,
+.g-color-gray-light-v1 {
+  color: #FAFAFA !important;
+}
+
+.landing-block-node-subtitle,
+.landing-block-node-upper-title,
+.g-color-primary {
+  color: #fff3d1 !important;
+  font-family: 'Manrope', sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.g-brd-primary {
+  border-color: #b89336 !important;
+}
+
+/* ========== 7. БЛОКИ «Кому подойдут» / «Кому не подойдут» — уменьшить расстояния ========== */
+.landing-block-node-icon-text,
+.landing-block-node-icon p {
+  line-height: 1.4 !important;
+  margin-bottom: 0.4em !important;
+}
+.landing-block-node-icon {
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+}
+.landing-block .landing-block-node-icon + .landing-block-node-icon {
+  margin-top: 0.25em !important;
+}
+.landing-block .row.g-mb-30 > [class*="col"] {
+  margin-bottom: 0.75rem !important;
+}
+.landing-block .g-mb-30 {
+  margin-bottom: 1rem !important;
+}
+.landing-block .g-mb-20 {
+  margin-bottom: 0.6rem !important;
+}
+.landing-block .g-mb-10 {
+  margin-bottom: 0.3rem !important;
+}
+
+main button[type="submit"],
+main .btn-primary,
+main .g-btn-primary {
+  background: linear-gradient(135deg, #fbe79a 0%, #fff3d1 32.5%, #b89336 100%) !important;
+  color: #4D3A0C !important;
+  border: none !important;
+}
