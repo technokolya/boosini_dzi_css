@@ -81,6 +81,26 @@ h6.landing-block-node-title {
 
 /* Кнопка Контакты в меню — золотой градиент (уже в CTA-правилах) */
 
+/* ========== 2.1 СТРЕЛКИ КАРУСЕЛИ — как пункты меню (золотистые при наведении) ========== */
+.slick-arrow,
+.u-arrow-v1,
+[class*="slick-arrow"],
+.js-next,
+.js-prev {
+  color: #FAFAFA !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.slick-arrow:hover,
+.u-arrow-v1:hover,
+[class*="slick-arrow"]:hover,
+.js-next:hover,
+.js-prev:hover {
+  color: #fff3d1 !important;
+  background: transparent !important;
+}
+
 /* ========== 3. ФОН БЛОКОВ #151515 (кроме блоков с картинкой) ========== */
 .g-bg-black-opacity-0_9--after::after,
 .g-bg-black-opacity-0_9,
