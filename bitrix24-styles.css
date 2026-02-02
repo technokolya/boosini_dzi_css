@@ -3,24 +3,66 @@
 
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&family=Manrope:wght@200..800&display=swap');
 
-/* ========== 1. РАЗМЕР ШРИФТА (18px база) ========== */
-main, .landing-block {
+/* ========== 1. РАЗМЕР ШРИФТА ========== */
+/* 18px ТОЛЬКО для текстовых блоков с информацией, НЕ для заголовков */
+main p,
+.landing-block-node-text,
+.landing-block-node-text-block-text,
+.landing-block-node-card-text,
+.landing-block-node-icon-text,
+.landing-semantic-text-medium {
   font-size: 18px !important;
 }
 
-main p, .landing-block-node-text, .landing-block-node-text-block-text,
-.landing-block-node-card-text, .landing-block-node-icon-text,
-.landing-semantic-text-medium {
-  font-size: 1em !important;
+/* Заголовки — явные размеры, иерархия h1 > h2 > h3 > h4 > h5 > h6 */
+h1,
+h1.landing-block-node-title {
+  font-size: 38px !important;
 }
 
-h1.landing-block-node-title { font-size: 1.9rem !important; }
-h2.landing-block-node-title { font-size: 1.45rem !important; }
-h3.landing-block-node-title { font-size: 1.2rem !important; }
-h4.landing-block-node-title { font-size: 1.05rem !important; }
-h5.landing-block-node-title, h6.landing-block-node-title { font-size: 0.95rem !important; }
-.landing-block-node-card-title, .landing-block-node-text-block-title { font-size: 1.05rem !important; }
-.landing-block-node-subtitle, .landing-block-node-upper-title { font-size: 0.85rem !important; }
+h2,
+h2.landing-block-node-title {
+  font-size: 30px !important;
+}
+
+h3,
+h3.landing-block-node-title {
+  font-size: 24px !important;
+}
+
+h4,
+h4.landing-block-node-title {
+  font-size: 20px !important;
+}
+
+h5,
+h5.landing-block-node-title {
+  font-size: 18px !important;
+}
+
+h6,
+h6.landing-block-node-title {
+  font-size: 16px !important;
+}
+
+.landing-block-node-card-title,
+.landing-block-node-text-block-title,
+.landing-block-node-icon-title {
+  font-size: 20px !important;
+}
+
+.landing-semantic-title-image-big {
+  font-size: 38px !important;
+}
+
+.landing-semantic-title-medium-bg-before {
+  font-size: 30px !important;
+}
+
+.landing-block-node-subtitle,
+.landing-block-node-upper-title {
+  font-size: 15px !important;
+}
 
 /* ========== 2. ШАПКА (МЕНЮ) — ссылки белые, при наведении золотистые ========== */
 .navbar .nav-link,
@@ -155,22 +197,28 @@ main p {
   line-height: 1.4 !important;
   margin-bottom: 0.4em !important;
 }
+
 .landing-block-node-icon {
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
-.landing-block .landing-block-node-icon + .landing-block-node-icon {
+
+.landing-block .landing-block-node-icon+.landing-block-node-icon {
   margin-top: 0.25em !important;
 }
-.landing-block .row.g-mb-30 > [class*="col"] {
+
+.landing-block .row.g-mb-30>[class*="col"] {
   margin-bottom: 0.75rem !important;
 }
+
 .landing-block .g-mb-30 {
   margin-bottom: 1rem !important;
 }
+
 .landing-block .g-mb-20 {
   margin-bottom: 0.6rem !important;
 }
+
 .landing-block .g-mb-10 {
   margin-bottom: 0.3rem !important;
 }
