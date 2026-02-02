@@ -17,51 +17,51 @@ main p,
 /* Заголовки — явные размеры, иерархия h1 > h2 > h3 > h4 > h5 > h6 */
 h1,
 h1.landing-block-node-title {
-  font-size: 38px !important;
+  font-size: 42px !important;
 }
 
 h2,
 h2.landing-block-node-title {
-  font-size: 30px !important;
+  font-size: 34px !important;
 }
 
 h3,
 h3.landing-block-node-title {
-  font-size: 24px !important;
+  font-size: 28px !important;
 }
 
 h4,
 h4.landing-block-node-title {
-  font-size: 20px !important;
+  font-size: 24px !important;
 }
 
 h5,
 h5.landing-block-node-title {
-  font-size: 18px !important;
+  font-size: 22px !important;
 }
 
 h6,
 h6.landing-block-node-title {
-  font-size: 16px !important;
+  font-size: 20px !important;
 }
 
 .landing-block-node-card-title,
 .landing-block-node-text-block-title,
 .landing-block-node-icon-title {
-  font-size: 20px !important;
+  font-size: 24px !important;
 }
 
 .landing-semantic-title-image-big {
-  font-size: 38px !important;
+  font-size: 42px !important;
 }
 
 .landing-semantic-title-medium-bg-before {
-  font-size: 30px !important;
+  font-size: 34px !important;
 }
 
 .landing-block-node-subtitle,
 .landing-block-node-upper-title {
-  font-size: 15px !important;
+  font-size: 19px !important;
 }
 
 /* ========== 2. ШАПКА (МЕНЮ) — ссылки белые, при наведении золотистые ========== */
